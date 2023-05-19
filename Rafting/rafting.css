@@ -19,4 +19,34 @@ html {
     align-items: center;
     text-align: center;
 }
+#content{
+max-width: 1600px;
+margin: 0 auto;
+}
+#backgroun{
+    height: 725px;
+
+}
+body{
+    background-color: darkcyan;
+}
+
+.logo, .icon{
+    width: 80px;
+}
+
+#hero-img{
+    width: 100%;
+}
+
+nav a,
+.book, .join,
+footer a{
+    text-decoration: none;
+}
+
+footer p a:hover{
+    text-decoration: underline;
+
+}
 
