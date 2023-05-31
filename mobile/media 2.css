@@ -1,0 +1,19 @@
+
+
+div {
+    background-color: pink;
+}
+
+@media screen and (min-width: 582px){
+    div {
+        background-color: seagreen;
+    }
+    
+}
+
+@media screen and (min-width: 802px){
+    div {
+        background-color: blue;
+    }
+    
+}
