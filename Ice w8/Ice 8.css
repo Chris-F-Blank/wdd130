@@ -1,0 +1,19 @@
+body{
+
+}
+main{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+img{
+    display: grid;
+    width: 400px;
+    height: 100%;
+    grid-column: 1fr 2fr;
+}
+.content{
+    display: grid;
+    width: 100px;
+    height: 100%;
+    grid-column: 2fr 3fr;
+
+}
