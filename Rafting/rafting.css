@@ -70,6 +70,7 @@ html{
 .home-title {
     font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
     font-size: 2em;
+    text-shadow: 2px 2px 3px black;
 }
 
 img{
