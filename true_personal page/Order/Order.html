@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Order.css">
+    <link rel="icon" type="Tab" href="../images/cool_tab.png">
+    <title>Contact Information</title>
+</head>
+<body>
+    <header> 
+        <nav>
+            <a id="logo_link" href="https://chris-f-blank.github.io/wdd130/true_personal%20page/DiceForge.html">
+                <img class="logo" src="Dice-Forge.png" alt="Dice Forge Logo">
+            </a>
+            <a href="https://chris-f-blank.github.io/wdd130/true_personal%20page/DiceForge.html">Home</a>
+            <a href="https://chris-f-blank.github.io/wdd130/Rafting/subpage/subpage.html">Questions</a>
+            <!-- <a href="https://chris-f-blank.github.io/wdd130/Siteplan/siteplan.html">Site Plan</a> -->
+            <a href="https://chris-f-blank.github.io/wdd130/Rafting/second%20page/secpage.html">Order</a>
+        </nav>
+    </header>
+
+    <div class="Info">
+        <p>To all you DnD players or any dice game lovers! 
+            Are you tired of settling for generic dice that lack personality and individuality? 
+            Step into a world where your imagination takes shape with our custom dice making service. 
+            We breathe life into your gaming sessions by crafting unique, one-of-a-kind dice that perfectly embody your style and character. Whether you're a dedicated tabletop gamer, a collector seeking a stunning centerpiece, or a gift-giver aiming to delight, our artisans combine skill and passion to create dice that ignite the senses. Elevate your gaming experience with dice as extraordinary as your adventures. Welcome to a realm where dreams are rolled, 
+            and legends are born.</p>
+    </div>
+
+    <div id="feedback"></div>
+
+    <form action="/my-handling-form-page" method="post">
+        <ul>
+          <li>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name">
+          </li>
+          <li>
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" name="user_email">
+          </li>
+          <li>
+            <label for="msg">Specifications:</label>
+            <textarea id="msg" name="user_specifications"></textarea>
+          </li>
+          <li class="button">
+            <button type="submit">Send your message</button>
+          </li>
+        </ul>
+      </form>
+
+    
+
+    <footer>
+        <p>Dice Forge © 2023 - Chris Fulcher</p>
+        <p><a href="https://chris-f-blank.github.io/wdd130/Rafting/rafting.html">Home</a></p>
+        <p><a href="https://chris-f-blank.github.io/wdd130/Siteplan/siteplan.html">Site Plan</a></p>
+        <p><a href="https://chris-f-blank.github.io/wdd130/true_personal%20page/DiceForge.html">Order</a></p>
+        <div class="social">
+            <a href="https://facebook.com">
+                <img src="facebook.png" alt="fb icon">
+            </a>
+            <a href="https://instagram.com">
+                <img src="instagram.png" alt="instagram icon">
+            </a>
+            <a href="https://twitter.com">
+                <img src="twitter.png" alt="twitter icon">
+            </a>
+
+        </div>
+    </footer>
+    <script>
+        const feedbackElement = document.getElementById('feedback');
+        const formElement = document.forms[0];
+        formElement.addEventListener('submit', function(e) {
+            e.preventDefault();
+            feedbackElement.innerHTML = 'Greetings '+ formElement.user_name.value +'! We apretiate you contacting us. We will respond to you shortly!';
+            feedbackElement.style.display = "block";
+            document.body.classList.toggle('moveDown');
+        });
+    </script> 
+
+</body></html>
