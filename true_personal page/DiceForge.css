@@ -20,6 +20,11 @@ body{
     padding: 0;
 }
 
+.TheWords{
+    color: #bbcd1a;
+    margin-left: 20%;
+    margin-right: 20%;
+}
 header{
     font-family: 'Roboto', sans-serif;
     font-style: italic;
