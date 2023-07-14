@@ -79,14 +79,24 @@ nav{
 }
 
 .questions{
-    display: grid;
+    display: flex;
     background-color: rgb(0, 0, 0);
-    max-height: fit-content;
-    max-width: fit-content;
-    grid-gap: 10px;
-    grid-template-columns: 1fr 1fr;
+    flex-direction: column;
+    row-gap: 12px;
     /* grid-template-rows: 10% 15% 25% 40% 15%; */
 
+}
+
+.displayQ{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.displayQ section{
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 h1, h2, h3, h4{
@@ -132,7 +142,7 @@ h4{
 footer{
     background-color: #6f7364;
     padding: 25px 50px;
-    margin-top: 5%;
+    margin-top: 10%;
     margin-bottom: 10px; 
     display: flex;
     justify-content: space-around;
