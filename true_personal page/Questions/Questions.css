@@ -56,14 +56,14 @@ header{
   margin-right: auto;
 }
 
-.Forgers{
-    /* grid-column: 2/3;
-    grid-row: 1/3;  */
+.Forger{
+    width: 20%;
+    height: 100%;
 }
 
 .Dice{
-    /* grid-column: 1/2;
-    grid-row: 2/3; */
+    width: 20%;
+    height: 100%;
 }
 
 nav{
